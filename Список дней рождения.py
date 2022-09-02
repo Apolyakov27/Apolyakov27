@@ -1,13 +1,13 @@
 import time
 birthdays = {}
 def f(x):
-    with open(u"/Users/alexey/Desktop/Разное/Python/List of bdays.txt", "r+") as bdays_list:
+    with open(u"/Users/alexey/Desktop/Разное/Учеба/Python/List of bdays.txt", "r+") as bdays_list:
         x = bdays_list.read().strip()
         sp = x.split("\n")
         sp.sort()
         spstr = ("\n").join(sp)
         time.sleep(1)
-    with open(u"/Users/alexey/Desktop/Разное/Python/List of bdays.txt", "w") as bdays_list:
+    with open(u"/Users/alexey/Desktop/Разное/Учеба/Python/List of bdays.txt", "w") as bdays_list:
         bdays_list.write(spstr)
 pass
 print("Справочник дней рождения")
@@ -16,7 +16,7 @@ print("Для поиска нажмите 1, для ввода новых име
 q = input()
 if q == "2":
     while True:
-        bdays_list = open(u"/Users/alexey/Desktop/Разное/Python/List of bdays.txt", "r+")
+        bdays_list = open(u"/Users/alexey/Desktop/Разное/Учеба/Python/List of bdays.txt", "r+")
         x = bdays_list.read().strip()
         sp = x.split("\n")
         list = []
@@ -54,7 +54,7 @@ if q == "2":
             else:
                 continue
 if q == "1":
-    with open(u"/Users/alexey/Desktop/Разное/Python/List of bdays.txt", "r+") as bdays_list:
+    with open(u"/Users/alexey/Desktop/Разное/Учеба/Python/List of bdays.txt", "r+") as bdays_list:
         x = bdays_list.read().strip()
         sp = x.split("\n")
         while True:
